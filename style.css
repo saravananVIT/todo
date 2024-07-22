@@ -1,0 +1,105 @@
+*{
+    
+   margin: 0%;
+   padding: 0%;
+   box-sizing: border-box;
+   font-family: Arial, Helvetica, sans-serif;
+
+}
+.main{
+    background-color: rgb(246, 61, 123);
+    min-height: 100vh;
+    width: 100%;
+    padding: 10px;
+}
+    
+.todo{
+    width: 100%;
+    max-width:550px;
+    margin: 100px auto 20px;
+    padding: 40px 30px 70px;
+    background-color: #ffff;
+    border-radius: 10px;
+}
+.todo h2{
+    color: black;
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    margin-left: 20px;
+}
+.todo h2 img{
+    width: 2rem;
+    height: 2rem;
+    margin-left: 10px;
+
+}
+.type{
+    display: flex;
+    background-color: rgb(208, 199, 189);
+    align-items: center;
+    justify-content: space-between;
+    padding-left:10px;
+    border-radius: 40px;
+}
+
+input{
+    border: none;
+    outline:none;
+    display: flex;
+    background-color:transparent;
+    padding: 10px;
+    
+}
+button{
+    border:none;
+    outline:none;
+    padding: 10px 20px;
+    border-radius: 40px;
+    background-color: rgb(254, 46, 46);
+    font-size: 16px;
+    color: rgb(249, 245, 245);
+    cursor: pointer;
+
+} 
+ul li{
+    list-style: disc;
+    list-style-position:inside;
+   padding-top: 10px;
+    margin-left: 10px;
+    cursor: pointer;
+    user-select: none;
+
+
+
+}
+ul li.one{
+    color: rgba(255, 0, 0, 0.842);
+    text-decoration: line-through;
+}
+ul li span{
+   position: absolute;
+    width:40px;
+    height: 40px;
+    right: 0;
+    font-size: 22px;
+    color: #555;
+    text-align: center;
+    line-height: 20px;
+    border-radius: 50%;
+    
+}
+span{
+    justify-items: flex-end;
+    width: 10px;
+}
+
+@media (min-width: 600px) {
+    ul li span {
+        font-size: 30px;
+        width: 40px;
+        height: 40px;
+        padding-right: 300px;
+        margin-right: 100px;
+    }
+}
